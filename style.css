@@ -1,0 +1,198 @@
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+html,body{width: 100%; height: 100%;}
+body {
+	font-family: 'Roboto','Helvetica Neue', Helvetica, sans-serif;
+	color: #fff;
+	background: #161F49;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin:0;
+	font-size: 16px;
+}
+body {
+background:#f7f8f8;
+}
+
+.container a {
+	outline: none;
+	color: #1a2542;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.container ul, .container li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.container a:hover, .container a:focus {
+	color: #6fc6ac;
+	text-decoration: none;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	border: 20px solid #f7f8f8;
+	color:#1a2542;
+	border-radius: 30px;
+	background:#141f49;
+	/* z-index:-100; */
+}
+.parallaxTilt_hover{
+	position: absolute;
+	width: 520px;
+	height: 360px;
+	left: calc(50% - 260px);
+	top: calc(50% - 180px);
+}
+.tilter_figure{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.tilter_image, .tilter_card, .tilter_caption{
+    transition: .5s ease-out;
+    transform: translate3d(0,0,0);
+}
+.tilter_image {
+    position: absolute;
+    width: 400px;
+    height: 130px;
+    left: calc(50% - 200px);
+    top: calc(46% - 65px);
+    z-index:100;
+}
+
+.tilter_card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f8f8;
+    z-index: ;
+    /* background-image: url(imgs/card-bg.png); */
+    border-radius: 11px;
+    box-shadow: 2px 2px 11px #00000059;
+}
+
+.tilter_caption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.tilter_figure .tilter_title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.95em;
+    position: absolute;
+    left: 0;
+    /* bottom: 50px; */
+    width: 100%;
+    text-align: center;
+    top: calc(55% - 20px);
+}
+.tilter_figure .tilter_tag {
+    display: inline-block;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+    position: absolute;
+    /* left: 0; */
+    bottom: 10px;
+    text-align: left;
+    width: 90%;
+    text-align: center;
+    font-weight: 100;
+    font-size: .85em;
+    left: calc(50% - 234px);
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, #66c4a7 0%, #33b9e7 10%, #576ab2 20%, #1c1853 30%, #66c4a7 40%, #33b9e7 50%, #576ab2 60%, #1c1853 70%, #66c4a7 80%, #33b9e7 90%, #576ab2 100%);
+    border-image-slice: 1;
+    border-left:0px !important;
+    border-right:0px !important;
+    border-bottom:0px !important;
+}
+.tilter_figure .tilter_tag span {
+    font-size: 0.94em;
+    font-weight: bold;
+}
+.footer {position: relative;width: 100%;bottom: 40px;padding: 0 30px;}
+.bottom-left {font-size: .75em;color: #ffffff7a;text-align: right;}
+
+@media (max-width: 480px)
+{
+	.container {border:10px solid #f7f8f8}
+
+	.parallaxTilt_hover{
+	width: 320px;
+	height: 320px;
+	left: calc(50% - 160px);
+	top: calc(50% - 210px);
+	}
+	
+.tilter_image {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: calc(50% - 125px);
+    top: calc(45% - 35px);
+}
+.tilter_card {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tilter_figure .tilter_title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: absolute;
+    left: 0;
+    /* bottom: 50px; */
+    width: 100%;
+    text-align: center;
+    top: calc(53% - 20px);
+}
+
+.tilter_caption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tilter_figure .tilter_tag {
+    display: inline-block;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+    position: absolute;
+    /* left: 0; */
+    bottom: 10px;
+    text-align: left;
+    border-top: 3px solid #cccccc4a;
+    width: 90%;
+    text-align: center;
+    font-weight: 100;
+    font-size: .7em;
+    left: calc(50% - 140px);
+    line-height:17px;
+  }
+
+	.bottom-left {text-align:center;}
+	.hidemobile {display:none;}
+}
+
