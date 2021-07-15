@@ -1,1 +1,1 @@
-# geometerio.gitub.io
+# geometerio.github.io
