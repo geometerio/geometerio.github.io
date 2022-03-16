@@ -4,7 +4,7 @@ body {
 	font-family: 'Roboto','Helvetica Neue', Helvetica, sans-serif;
 	color: #fff;
 	background: #161F49;
-	overflow-x: hidden;
+	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin:0;
